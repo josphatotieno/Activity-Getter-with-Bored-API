@@ -117,13 +117,27 @@ select {
 
 
 @media (max-width: 500px) {
+    body {
+        background-color: #000;
+    }
+
     #form-title h1 {
         font-size: 32px;
+    }
+
+    #form-title p,
+    label {
+        color: #fff;
     }
 
     #form-wrapper {
         padding-left: 20px;
         padding-right: 20px;
+    }
+
+    #activity-modal,
+    #spinner {
+        background-color: rgba(0, 0, 0, 0.8);
     }
 
     #activity-wrapper {
