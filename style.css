@@ -62,7 +62,16 @@ select {
     transform: scale(.97);
 }
 
-#activity-modal {
+#spinner {
+    height: 100%;
+    /* display: flex; */
+    justify-content: center;
+    padding-bottom: 30px;
+    display: none;
+}
+
+#activity-modal,
+#spinner {
     background-color: rgb(34 219 190 / 90%);
     position: absolute;
     top: 0%;
