@@ -10,13 +10,17 @@ async function getActivity(e) {
 
     const type = typeOfActivity.options[typeOfActivity.selectedIndex].text;
 
-    console.log(type)
-    const response = await fetch(`http://www.boredapi.com/api/activity?type=${type.toLowerCase()}`);
+    if(type !== '') {
+        const response = await fetch(`http://www.boredapi.com/api/activity?type=${type.toLowerCase()}`);
 
-    const data = await response.json();
+        const data = await response.json();
 
-    displayActivity(data.activity);
-    console.log(data.activity);
+         displayActivity(data.activity);
+
+    } else {
+        alert('Please select type of activity')
+    }
+
     
 }
 
