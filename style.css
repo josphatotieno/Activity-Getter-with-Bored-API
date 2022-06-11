@@ -53,6 +53,7 @@ select {
 }
 
 .btn {
+    cursor: git;
     background-color: #9c27b0;
     color: #fff;
 }
